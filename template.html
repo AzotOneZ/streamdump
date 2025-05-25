@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Streamdump</title>
+</head>
+<body>
+  <h2>Streamdump Downloader</h2>
+  <form id="form" method="POST" action="/api/submit" enctype="multipart/form-data">
+    <label>Video URL:</label><br>
+    <input type="text" name="url" required><br><br>
+
+    <label>Client ID:</label><br>
+    <input type="text" name="client_id" required><br><br>
+    <label>Tenant ID:</label><br>
+    <input type="text" name="tenant_id" required><br><br>
+    <label>Client Secret:</label><br>
+    <input type="text" name="client_secret" required><br><br>
+
+    <label>Cookies JSON (.json):</label><br>
+    <input type="file" name="cookies_json"><br><br>
+
+    <label>Cookies TXT (.txt):</label><br>
+    <input type="file" name="cookies_txt"><br><br>
+
+    <label>Raw Cookie Text:</label><br>
+    <textarea name="cookie_text" rows="5" cols="50"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+  <p id="status"></p>
+</body>
+</html>
